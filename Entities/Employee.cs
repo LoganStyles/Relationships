@@ -7,8 +7,7 @@ namespace Relationships
         public string LastName { get; set; }
         public long Age { get; set; }
 
-        public ICollection<Album> SeniorEmployeeAlbums { get; set; }
-        public ICollection<Album> JuniorEmployeeAlbums { get; set; }
+        public Album Album { get; set; }
     }
 }
 
