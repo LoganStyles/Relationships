@@ -9,15 +9,15 @@ namespace Relationships.Data
         public ArtistsContext(DbContextOptions<ArtistsContext> options) : base(options) { }
 
         public DbSet<Employee> Employees { get; set; }
-        public DbSet<Album> Albums { get; set; }
+        public DbSet<Studio> Studio { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder
                 .Entity<Employee>()
-                .HasOne(e => e.Album)
+                .HasOne(s => s.Studio)
                 .WithOne(e => e.Employee)
-                .HasForeignKey<Album>(emp => emp.EmployeeId);
+                .HasForeignKey<Studio>(s => s.EmployeeId);
         }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)

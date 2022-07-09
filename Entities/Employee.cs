@@ -7,7 +7,7 @@ namespace Relationships
         public string LastName { get; set; }
         public long Age { get; set; }
 
-        public Album Album { get; set; }
+        public Studio Studio { get; set; }
     }
 }
 

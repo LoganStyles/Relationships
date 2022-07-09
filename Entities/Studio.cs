@@ -1,10 +1,10 @@
 namespace Relationships
 {
-    public class Album
+    public class Studio
     {
         public long Id { get; set; }
-        public string Title { get; set; }
-        public double Price { get; set; }
+        public long HouseNumber { get; set; }
+        public string City { get; set; }
 
         public long EmployeeId { get; set; }
         public Employee Employee { get; set; }
