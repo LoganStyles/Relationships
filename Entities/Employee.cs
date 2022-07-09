@@ -7,7 +7,12 @@ namespace Relationships
         public string LastName { get; set; }
         public long Age { get; set; }
 
+
+        [InverseProperty("SeniorEmployee")]
         public ICollection<Album> SeniorEmployeeAlbums { get; set; }
+        
+
+        [InverseProperty("JuniorEmployee")]
         public ICollection<Album> JuniorEmployeeAlbums { get; set; }
     }
 }

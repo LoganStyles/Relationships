@@ -13,17 +13,6 @@ namespace Relationships.Data
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder
-                .Entity<Employee>()
-                .HasMany(a => a.SeniorEmployeeAlbums)
-                .WithOne(e => e.SeniorEmployee)
-                .HasForeignKey(emp => emp.SeniorEmployeeId);
-
-            modelBuilder
-                .Entity<Employee>()
-                .HasMany(a => a.JuniorEmployeeAlbums)
-                .WithOne(e => e.JuniorEmployee)
-                .HasForeignKey(emp => emp.JuniorEmployeeId);
         }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
@@ -35,18 +24,3 @@ namespace Relationships.Data
         }
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
