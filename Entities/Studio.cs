@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace Relationships
 {
-    [Index(nameof(EmployeeId), IsUnique = true)]
+    [Index(nameof(EmpId), IsUnique = true)]
     public class Studio
     {
         public long Id { get; set; }
@@ -11,9 +11,23 @@ namespace Relationships
         public string City { get; set; }
 
         [ForeignKey("Employee")]
-        public long EmployeeId { get; set; }
+        public long EmpId { get; set; }
 
         [InverseProperty("Studio")]
         public Employee Employee { get; set; }
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
