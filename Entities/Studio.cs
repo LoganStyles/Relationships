@@ -1,4 +1,3 @@
-using System.ComponentModel.DataAnnotations.Schema;
 using Microsoft.EntityFrameworkCore;
 
 namespace Relationships
@@ -10,10 +9,7 @@ namespace Relationships
         public long HouseNumber { get; set; }
         public string City { get; set; }
 
-        [ForeignKey("Employee")]
         public long EmployeeId { get; set; }
-
-        [InverseProperty("Studio")]
         public Employee Employee { get; set; }
     }
 }
