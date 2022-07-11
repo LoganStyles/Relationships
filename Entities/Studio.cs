@@ -1,8 +1,5 @@
-using Microsoft.EntityFrameworkCore;
-
 namespace Relationships
 {
-    [Index(nameof(EmployeeId), IsUnique = true)]
     public class Studio
     {
         public long Id { get; set; }
