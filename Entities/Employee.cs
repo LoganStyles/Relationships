@@ -1,3 +1,5 @@
+using System.ComponentModel.DataAnnotations.Schema;
+
 namespace Relationships
 {
     public class Employee
@@ -7,20 +9,7 @@ namespace Relationships
         public string LastName { get; set; }
         public long Age { get; set; }
 
+        [InverseProperty("Employee")]
         public Studio Studio { get; set; }
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-

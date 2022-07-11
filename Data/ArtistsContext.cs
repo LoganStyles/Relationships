@@ -13,11 +13,7 @@ namespace Relationships.Data
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder
-                .Entity<Employee>()
-                .HasOne(s => s.Studio)
-                .WithOne(e => e.Employee)
-                .HasForeignKey<Studio>(s => s.EmployeeId);
+            
         }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
