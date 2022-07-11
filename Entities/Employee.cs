@@ -10,3 +10,18 @@ namespace Relationships
         public Studio Studio { get; set; }
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
