@@ -1,24 +1,19 @@
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Relationships
 {
     public class Album
     {
-        public long Id { get; set; }
+        [Key]
+        public long AlbID { get; set; }
         public string Title { get; set; }
         public double Price { get; set; }
 
-        [ForeignKey("AlbumId")]
-        [InverseProperty(nameof(Tag.CompilationAlbums))]
-        public ICollection<Tag> CompilationTags { get; set; }
+        [ForeignKey("AlbID")]
+        [InverseProperty(nameof(Tag.Albums))]
+        public ICollection<Tag> Tags { get; set; }
 
-        [ForeignKey("AlbumId")]
-        [InverseProperty(nameof(Tag.MixtapeAlbums))]
-        public ICollection<Tag> MixtapeTags { get; set; }
-
-        [ForeignKey("AlbumId")]
-        [InverseProperty(nameof(Tag.VideoAlbums))]
-        public ICollection<Tag> VideoTags { get; set; }
     }
 }
 
