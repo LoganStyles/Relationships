@@ -6,7 +6,7 @@ namespace Relationships
         public long HouseNumber { get; set; }
         public string City { get; set; }
 
-        public long EmployeeId { get; set; }
+        public long EmpId { get; set; }
         public Employee Employee { get; set; }
         
     }

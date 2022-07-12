@@ -17,7 +17,7 @@ namespace Relationships.Data
                 .Entity<Employee>()
                 .HasOne(s => s.Studio)
                 .WithOne(e => e.Employee)
-                .HasForeignKey<Studio>(s => s.EmployeeId);
+                .HasForeignKey<Studio>(s => s.EmpId);
         }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
