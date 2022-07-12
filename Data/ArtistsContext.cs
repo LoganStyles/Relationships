@@ -11,12 +11,7 @@ namespace Relationships.Data
         public DbSet<Album> Albums { get; set; }
         public DbSet<Tag> Tags { get; set; }
 
-        protected override void OnModelCreating(ModelBuilder modelBuilder)
-        {
-            // modelBuilder
-            //     .Entity<Album>()
-                
-        }
+        protected override void OnModelCreating(ModelBuilder modelBuilder) { }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
