@@ -13,17 +13,3 @@ namespace Relationships
         public Employee JuniorEmployee { get; set; }
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-

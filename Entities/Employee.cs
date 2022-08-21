@@ -16,17 +16,3 @@ namespace Relationships
         public ICollection<Album> JuniorEmployeeAlbums { get; set; }
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
