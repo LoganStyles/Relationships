@@ -7,17 +7,3 @@ namespace Relationships
         public double Price { get; set; }
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
