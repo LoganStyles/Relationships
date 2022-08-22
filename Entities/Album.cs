@@ -9,17 +9,3 @@ namespace Relationships
         public ICollection<AlbumTag> AlbumTags { get; set; }
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
