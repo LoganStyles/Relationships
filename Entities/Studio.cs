@@ -17,17 +17,3 @@ namespace Relationships
         public Employee Employee { get; set; }
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
