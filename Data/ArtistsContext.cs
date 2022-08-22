@@ -22,17 +22,3 @@ namespace Relationships.Data
         }
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
