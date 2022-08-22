@@ -1,5 +1,3 @@
-using System.Collections.Generic;
-
 namespace Relationships
 {
     public class Album
@@ -10,17 +8,3 @@ namespace Relationships
         public ICollection<AlbumTag> AlbumTags { get; set; }
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
