@@ -15,17 +15,3 @@ namespace Relationships
         public ICollection<Album> Albums { get; set; }
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
